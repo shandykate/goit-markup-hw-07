@@ -1,0 +1,34 @@
+/* SECTION CLIENTS */
+.clients__list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: $animation-timing;
+
+  color: $icons-color;
+}
+
+.clients__link:hover {
+  border: 1px solid $accent-color;
+  color: $accent-color;
+}
+
+.clients__icon {
+  fill: currentColor;
+}
