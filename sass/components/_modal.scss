@@ -27,7 +27,8 @@
   width: 528px;
   height: 581px;
   background-color: $white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform $animation-timing 250ms;
 }
@@ -61,8 +62,9 @@
   transition: fill 250ms $animation-timing;
 }
 
-.modal__close .modal__icon:hover,
-.modal__close .modal__icon:focus {
+.modal__icon
+ &hover,
+ &focus {
   fill: $accent-color;
 }
 
@@ -125,18 +127,21 @@
   height: 18px;
 }
 
-.form__field:focus-within > .form__icon {
+.form__field
+ &focus-within > .form__icon {
   fill: $accent-color;
 }
 
-.form__input:focus,
-.form__textarea:focus {
+.form__input,
+.form__textarea
+ &focus {
   outline: transparent;
   border: 1px solid $accent-color;
   cursor: pointer;
 }
 
-.form__textarea::placeholder {
+.form__textarea
+ &placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.14;
@@ -159,23 +164,25 @@
   color: $primary-text-color;
 }
 
-  .policy__text {
-    position: relative;
-    display: inline;
-    color: $accent-color;
-  }
+.policy__text {
+  position: relative;
+  display: inline;
+  color: $accent-color;
+}
 
-  .policy__text:after {
-    position: absolute;
-    bottom: 1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    content: "";
-    background-color: $accent-color;
-  }
+.policy__text
+ &after {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: $accent-color;
+}
 
-.policy__label::before {
+.policy__label
+ &before {
   display: inline-block;
   content: "";
   width: 16px;
@@ -186,7 +193,7 @@
   margin-right: 8px;
 }
 
-.policy__input:checked + .policy__label::before {
+.policy__input &checked + .policy__label &before {
   border: $accent-color;
   background-color: $accent-color;
   background-image: url(../img/icon-check.svg);
@@ -200,9 +207,9 @@
   align-self: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms $animation-timing;
-
 }
 
-.form__submit:hover {
-  background-color: #188CE8;
+.form__submit
+ &hover {
+  background-color: #188ce8;
 }

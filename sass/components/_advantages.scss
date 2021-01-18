@@ -5,7 +5,8 @@
 
 .advantage {
   display: flex;
-}  
+}
+
 .advantage__heading {
   margin-top: 0;
   margin-bottom: 10;
@@ -17,6 +18,7 @@
   text-transform: uppercase;
   color: $title-text-color;
 }
+
 .advantage__text {
   margin-top: 0;
   margin-bottom: 0;
@@ -25,6 +27,7 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+
 .advantage__item {
   width: 270px;
 }
