@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: $primary-font;
-  font-weight: $primary-font-weight;
   color: $primary-text-color;
   background-color: $white-color;
 }
@@ -44,10 +43,10 @@ a,
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
   text-align: center;
+  font-family: $title-font;
+  font-weight: $bold-font-weight;
+  font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: $title-text-color;
@@ -58,6 +57,7 @@ a,
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: $logo-font;
+  font-weight: $logo-font-weight;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -69,8 +69,9 @@ a,
   align-items: center;
   border-radius: 4px;
   border: none;
+  font-family: $title-font;
+  font-weight: $bold-font-weight;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -94,26 +95,22 @@ a,
 }
 
 .social {
-  display: flex;
-  align-items: center;
+  @extend flex-center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
-  transition: color $animation-timing 250ms,
-    background-color $animation-timing 250ms,
-    border-radius $animation-timing 250ms;
-
   color: $icons-color;
   background-color: transparent;
+  transition: color $animation-timing 250ms,
+  background-color $animation-timing 250ms,
+  border-radius $animation-timing 250ms;
 }
-
-.social &hover {
-  border-radius: 50%;
-  color: $white-color;
-  background-color: $accent-color;
-}
+.social:hover {
+    border-radius: 50%;
+    color: $white-color;
+    background-color: $accent-color;
+  }
 
 .icon {
   fill: currentColor;

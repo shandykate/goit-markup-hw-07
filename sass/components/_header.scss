@@ -1,6 +1,5 @@
 /* HEADER*/
 .header {
-  font-weight: 500;
   border-bottom: 1px solid $light-grey-color;
 }
 
@@ -38,18 +37,15 @@
   transition-duration: 250ms;
   transition-timing-function: $animation-timing;
 }
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+  &:hover,
+  &:focus {
   color: $accent-color;
 }
 
 .site-nav__link.current {
   color: $accent-color;
 }
-
-.site-nav__link.current
- &after {
+  &::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -71,12 +67,12 @@
 }
 
 .contacts__link {
-  display: flex;
-  align-items: center;
+  @extend flex-center;
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
+  font-family: $nav-font;
+  font-weight: $nav-font-weight;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -86,8 +82,8 @@
   transition-timing-function: $animation-timing;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+  &:hover,
+  &:focus {
   color: $accent-color;
 }
 

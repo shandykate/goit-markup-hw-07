@@ -266,6 +266,58 @@ summary {
   display: list-item;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Roboto900';
+  src: url("../../fonts/Roboto-Black.eot");
+  src: url("../../fonts/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Black.woff2") format("woff2"), url("../../fonts/Roboto-Black.woff") format("woff"), url("../../fonts/Roboto-Black.svg#Roboto-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto700';
+  src: url("../../fonts/Roboto-Bold.eot");
+  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff"), url("../../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto500';
+  src: url("../../fonts/Roboto-Medium.eot");
+  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff"), url("../../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto400';
+  src: url("../../fonts/Roboto.woff2") format("woff2"), url("../../fonts/Roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway700';
+  src: url("../../fonts/Raleway-Bold.eot");
+  src: url("../../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Raleway-Bold.woff2") format("woff2"), url("../../fonts/Raleway-Bold.woff") format("woff"), url("../../fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* COMMON HTML, BODY*/
 html {
   box-sizing: border-box;
@@ -278,7 +330,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto400", sans-serif;
   color: #757575;
   background-color: #ffffff;
 }
@@ -311,6 +363,7 @@ a,
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
+  font-family: "Roboto700", sans-serif;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -323,8 +376,8 @@ a,
   display: inline-block;
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-family: "Raleway700", sans-serif;
+  font-weight: 900;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -336,8 +389,9 @@ a,
   align-items: center;
   border-radius: 4px;
   border: none;
-  font-size: 16px;
+  font-family: "Roboto700", sans-serif;
   font-weight: 700;
+  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -350,6 +404,7 @@ a,
   background-color: #2196f3;
 }
 
+/* LIST OF SOCIAL NETWORKS'ICONS */
 .social-list {
   display: flex;
   justify-content: center;
@@ -381,19 +436,6 @@ a,
   fill: currentColor;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /* HEADER*/
 .header {
   border-bottom: 1px solid #f5f4fa;
@@ -423,6 +465,7 @@ a,
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: "Roboto500", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -469,6 +512,7 @@ a,
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: "Roboto500", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -511,6 +555,7 @@ a,
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
+  font-family: "Roboto900", sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -531,7 +576,7 @@ a,
 .advantage__heading {
   margin-top: 0;
   margin-bottom: 10;
-  font-style: normal;
+  font-family: "Roboto700", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -543,6 +588,7 @@ a,
 .advantage__text {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -591,7 +637,8 @@ a,
   padding-top: 27px;
   padding-bottom: 27px;
   transform: translate(-50%);
-  font-weight: bold;
+  font-family: "Roboto700", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -645,6 +692,7 @@ a,
 .team__name {
   margin-top: 0;
   margin-bottom: 10px;
+  font-family: "Roboto500", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -655,6 +703,7 @@ a,
 .team__text {
   margin-top: 0;
   margin-bottom: 16px;
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.14;
@@ -763,8 +812,8 @@ a,
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close .modal__icon:hover,
-.modal__close .modal__icon:focus {
+.modal__icon:hover,
+.modal__icon:focus {
   fill: #2196f3;
 }
 
@@ -867,7 +916,7 @@ a,
   color: #2196f3;
 }
 
-.policy__text:after {
+.policy__text::after {
   position: absolute;
   bottom: 1px;
   left: 0;
@@ -905,7 +954,7 @@ a,
 }
 
 .form__submit:hover {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 /* PORTFOLIO */
@@ -975,6 +1024,7 @@ a,
 .portfolio__heading {
   margin-top: 0;
   margin-bottom: 4px;
+  font-family: "Roboto700", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1011,6 +1061,7 @@ a,
 .portfolio__text {
   margin: 0;
   padding: 63px 24px;
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -1021,6 +1072,7 @@ a,
 .portfolio__desc {
   margin-top: 0;
   margin-bottom: 0;
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -1041,6 +1093,7 @@ a,
   padding-top: 60px;
   padding-bottom: 60px;
   text-decoration: none;
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1063,6 +1116,8 @@ a,
 
 .footer__adress {
   display: inline-block;
+  font-family: "Roboto400", sans-serif;
+  font-weight: 400;
   font-style: normal;
   color: #ffffff;
 }
@@ -1077,6 +1132,7 @@ a,
 .footer__heading {
   margin-top: 0;
   margin-bottom: 20px;
+  font-family: "Roboto700", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1122,6 +1178,7 @@ a,
 }
 
 .footer__input::placeholder {
+  font-family: "Roboto400", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;

@@ -10,16 +10,18 @@ $icons-color: #afb1b8;
 $animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
 
 // Fonts
-$logo-font: 'Raleway700';
-$primary-font: 'Roboto400';
-$nav-font: 'Roboto500';
-$title-font: 'Roboto700';
-$heading-font: 'Roboto900';
+$logo-font: 'Raleway700', sans-serif;
+$primary-font: 'Roboto400', sans-serif;
+$nav-font: 'Roboto500', sans-serif;
+$title-font: 'Roboto700', sans-serif;
+$heading-font: 'Roboto900', sans-serif;
 
-$bold_weight: 700;
-$primary-font-weight: 400;
+$logo-font-weight: 900;
+$bold-font-weight: 700;
 $nav-font-weight: 500;
-$heading-font-weight: 900;
+$primary-font-weight: 400;
+
+
 
 
 

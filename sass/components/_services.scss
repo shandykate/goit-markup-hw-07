@@ -3,10 +3,6 @@
   display: flex;
 }
 
-.service__position {
-  position: relative;
-}
-
 .service__heading {
     position: absolute;
     left: 50%;
@@ -16,7 +12,8 @@
     padding-top: 27px;
     padding-bottom: 27px;
     transform: translate(-50%);
-    font-weight: bold;
+    font-family: $title-font;
+    font-weight: $bold-font-weight;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
@@ -24,8 +21,12 @@
     text-transform: uppercase;
     color: $white-color;
   }
+
+  .service__position {
+    position: relative;
+  }
  
-.service__position::before {
+    &::before {
     display: inline-block;
     position: absolute;
     bottom: 0;
