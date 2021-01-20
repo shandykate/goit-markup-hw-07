@@ -8,6 +8,18 @@
   align-items: center;
 }
 
+.logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: $logo-font;
+  font-weight: $bold-font-weight;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+}
+
 .header__logo {
   color: $title-text-color;
 }
@@ -27,8 +39,8 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-family: $nav-font;
-  font-weight: $nav-font-weight;
+  font-family: $medium-font;
+  font-weight: $medium-font-weight;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -37,15 +49,15 @@
   transition-duration: 250ms;
   transition-timing-function: $animation-timing;
 }
-  &:hover,
-  &:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: $accent-color;
 }
 
 .site-nav__link.current {
   color: $accent-color;
 }
-  &::after {
+.site-nav__link.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -67,12 +79,12 @@
 }
 
 .contacts__link {
-  @extend flex-center;
+  @extend %flex-center;
   justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-family: $nav-font;
-  font-weight: $nav-font-weight;
+  font-family: $medium-font;
+  font-weight: $medium-font-weight;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -82,8 +94,8 @@
   transition-timing-function: $animation-timing;
 }
 
-  &:hover,
-  &:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: $accent-color;
 }
 

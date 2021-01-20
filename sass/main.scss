@@ -1,12 +1,13 @@
 
-@import './base/modern-normalize';
-@import './base/visually-hidden';
-
 @import './utils/variables';
 @import './utils/fonts';
 @import './utils/placeholders';
 
+@import './base/modern-normalize';
+@import './base/visually-hidden';
+
 @import './base/common';
+@import './base/section';
 
 @import './components/header';
 @import './components/hero';

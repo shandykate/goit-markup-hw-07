@@ -62,8 +62,8 @@
   transition: fill 250ms $animation-timing;
 }
 
-  &:hover,
-  & :focus {
+.modal__icon:hover,
+.modal__icon:focus {
   fill: $accent-color;
 }
 
@@ -154,7 +154,7 @@
 }
 
 .policy__label {
-  @extend flex-center;
+  @extend %flex-center;
   font-family: $primary-font;
   font-weight: $primary-font-weight;
   font-size: 14px;
@@ -169,7 +169,7 @@
   color: $accent-color;
 }
 
-  &::after {
+.policy__text::after {
   position: absolute;
   bottom: 1px;
   left: 0;
@@ -206,6 +206,6 @@
   transition: background-color 250ms $animation-timing;
 }
 
-  &:hover {
+.form__submit:hover {
   background-color: #188ce8;
 }

@@ -9,7 +9,7 @@
 }
 
 .clients__link {
-  @extend flex-center;
+  @extend %flex-center;
   justify-content: center;
   width: 170px;
   height: 90px;
@@ -21,7 +21,7 @@
   color: $icons-color;
 }
 
-  &:hover {
+.clients__link:hover {
   border: 1px solid $accent-color;
   color: $accent-color;
 }

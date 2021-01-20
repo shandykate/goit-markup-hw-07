@@ -19,15 +19,15 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
-    &:last-child {
+  .team__item:last-child {
     margin-right: 0;
   }
 
   .team__name {
     margin-top: 0;
     margin-bottom: 10px;
-    font-family: $nav-font;
-    font-weight: $nav-font-weight;
+    font-family: $medium-font;
+    font-weight: $medium-font-weight;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -50,3 +50,35 @@
     display: block;
     padding: 30px 30px;
   }
+
+  /* LIST OF SOCIAL NETWORKS'ICONS */
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social {
+  @extend %flex-center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $icons-color;
+  background-color: transparent;
+  transition: color $animation-timing 250ms,
+  background-color $animation-timing 250ms,
+  border-radius $animation-timing 250ms;
+}
+.social:hover {
+    border-radius: 50%;
+    color: $white-color;
+    background-color: $accent-color;
+  }
+
+.icon {
+  fill: currentColor;
+}
