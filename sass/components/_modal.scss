@@ -72,7 +72,7 @@
   margin-bottom: 12px;
   text-align: center;
   font-family: $primary-font;
-  font-weight: $bold-font-weight;
+  font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.03em;
@@ -89,7 +89,7 @@
 .form__label {
   margin-bottom: 4px;
   font-family: $primary-font;
-  font-weight: $primary-font-weight;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -141,7 +141,7 @@
 
 .form__textarea::placeholder {
   font-family: $primary-font;
-  font-weight: $primary-font-weight;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -156,7 +156,7 @@
 .policy__label {
   @extend %flex-center;
   font-family: $primary-font;
-  font-weight: $primary-font-weight;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.03em;
